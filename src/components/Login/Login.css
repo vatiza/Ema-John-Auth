@@ -1,0 +1,61 @@
+.form-container {
+  width: 500px;
+  height: 400px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #95a0a7;
+
+  margin: 20px auto;
+  padding-left: 30px;
+}
+.form-title {
+  text-align: center;
+
+  font-family: Lato;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.088px;
+}
+.form-control {
+  margin-bottom: 20px;
+}
+.form-control label {
+  display: block;
+
+  /* Subtitle 1 */
+  font-family: Lato;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.026px;
+}
+.form-control input {
+  padding-left: 10px;
+  width: 415px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #95a0a7;
+  font-size: 1rem;
+}
+.submit-btn {
+  font-size: 1rem;
+  color: white;
+  width: 415px;
+  height: 55px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: rgba(255, 153, 0, 0.3);
+}
+.createnewact-btn {
+  text-align: center;
+}
+.crtbtn {
+  color: #f90;
+}
+.createnewact-btn a {
+  text-decoration: none;
+}
