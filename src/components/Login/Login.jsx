@@ -8,7 +8,7 @@ const Login = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const from = location.state?.from?.pathname || "/";
-    console.log(location);
+    const [show, setShow] = useState(false);
 
 
     const handleSignin = (event) => {
@@ -38,7 +38,12 @@ const Login = () => {
                 </div>
                 <div className='form-control'>
                     <label htmlFor="">Password</label>
-                    <input type="password" name='password' placeholder='enter your password' required />
+                    <input type={show ? "text" : "password"} name='password' placeholder='enter your password' required />
+                    <p onClick={() => setShow(!show)}><small>
+                        {
+                            show ? <span>Hide Password</span> : <span>Show Password</span>
+                        }
+                    </small></p>
                 </div>
                 <input className='submit-btn' type="submit" value='login' />
             </form>
